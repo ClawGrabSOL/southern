@@ -1,588 +1,136 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Orphaned Macaque Named "Pip" After WW2 Trench Helmet Found in Zoo Storage â€” The Field Post</title>
-  <meta name="description" content="Kestrel Valley Wildlife Park in Bristol has captured hearts worldwide after naming their orphaned Japanese macaque 'Pip' â€” inspired by a dusty WW2 Brodie helmet discovered in the park's old equipment room." />
+  <title>Meet Solomon: Curragh Wildlife Sanctuary Welcomes Its Oldest, Most Unimpressed Resident — The Field Post</title>
+  <meta name="description" content="A 34-year-old chimpanzee named Solomon has arrived at Curragh Wildlife Sanctuary in Queensland. He arrived calm, settled immediately, and was found forty minutes later holding a copy of the Farmer's Almanac." />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="shortcut icon" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
-      --ink:      #1a1a1a;
-      --ink-2:    #3a3a3a;
-      --ink-3:    #6a6a6a;
-      --rule:     #e0e0e0;
-      --bg:       #faf9f7;
-      --white:    #ffffff;
-      --accent:   #1a3a5c;
-      --accent-l: #2a5f9e;
-      --red:      #c0392b;
-      --sepia:    #f5f0e8;
+      --ink: #1a1a1a; --ink-2: #3a3a3a; --ink-3: #6a6a6a;
+      --rule: #e0e0e0; --bg: #faf9f7; --white: #ffffff;
+      --accent: #1a3a5c; --accent-l: #2a5f9e; --red: #c0392b; --sepia: #f5f0e8;
     }
-
     html { font-size: 16px; }
-    body {
-      background: var(--bg);
-      color: var(--ink);
-      font-family: 'Inter', sans-serif;
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    a { color: inherit; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    /* â”€â”€ TOP TICKER â”€â”€ */
-    .ticker-bar {
-      background: var(--accent);
-      color: #fff;
-      font-size: 11.5px;
-      font-weight: 500;
-      letter-spacing: 0.02em;
-      padding: 6px 0;
-      overflow: hidden;
-    }
-    .ticker-inner {
-      display: flex;
-      animation: ticker 40s linear infinite;
-      white-space: nowrap;
-      gap: 0;
-    }
+    body { background: var(--bg); color: var(--ink); font-family: 'Inter', sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; } a:hover { text-decoration: underline; }
+    .ticker-bar { background: var(--accent); color: #fff; font-size: 11.5px; font-weight: 500; padding: 6px 0; overflow: hidden; }
+    .ticker-inner { display: flex; animation: ticker 45s linear infinite; white-space: nowrap; }
     .ticker-inner span { padding: 0 36px; }
-    .ticker-inner span::before { content: 'â—†  '; color: rgba(255,255,255,0.4); }
-    @keyframes ticker {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-
-    /* â”€â”€ MASTHEAD â”€â”€ */
-    .masthead {
-      background: var(--white);
-      border-bottom: 3px solid var(--ink);
-      padding: 0 24px;
-    }
-    .masthead-top {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 18px 0 14px;
-      gap: 16px;
-    }
-    .brand {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .brand-name {
-      font-family: 'Playfair Display', serif;
-      font-size: 38px;
-      font-weight: 900;
-      color: var(--ink);
-      letter-spacing: -0.02em;
-      line-height: 1;
-    }
+    .ticker-inner span::before { content: '◆  '; color: rgba(255,255,255,0.4); }
+    @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    .masthead { background: var(--white); border-bottom: 3px solid var(--ink); padding: 0 24px; }
+    .masthead-top { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 18px 0 14px; gap: 16px; }
+    .brand-name { font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 900; color: var(--ink); letter-spacing: -0.02em; line-height: 1; }
     .brand-name span { color: var(--red); }
-    .brand-sub {
-      font-size: 9.5px;
-      font-weight: 600;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--ink-3);
-      margin-top: 3px;
-    }
-    .masthead-date {
-      font-size: 12px;
-      color: var(--ink-3);
-      text-align: right;
-      line-height: 1.7;
-    }
+    .brand-sub { font-size: 9.5px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-3); margin-top: 3px; }
+    .masthead-date { font-size: 12px; color: var(--ink-3); text-align: right; line-height: 1.7; }
     .masthead-date strong { display: block; color: var(--ink-2); font-weight: 600; }
+    .nav { background: var(--ink); padding: 0 24px; }
+    .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; overflow-x: auto; }
+    .nav-inner a { color: rgba(255,255,255,0.75); font-size: 12px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; padding: 11px 18px; white-space: nowrap; border-bottom: 2px solid transparent; transition: color 0.15s; }
+    .nav-inner a:hover, .nav-inner a.active { color: #fff; text-decoration: none; border-bottom-color: var(--red); }
 
-    /* â”€â”€ NAV â”€â”€ */
-    .nav {
-      background: var(--ink);
-      padding: 0 24px;
-    }
-    .nav-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      gap: 0;
-      overflow-x: auto;
-    }
-    .nav-inner a {
-      color: rgba(255,255,255,0.75);
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      padding: 11px 18px;
-      white-space: nowrap;
-      transition: color 0.15s, background 0.15s;
-      border-bottom: 2px solid transparent;
-    }
-    .nav-inner a:hover, .nav-inner a.active {
-      color: #fff;
-      text-decoration: none;
-      border-bottom-color: var(--red);
-    }
-    .nav-inner a.active { color: #fff; border-bottom-color: #fff; }
-
-    /* â”€â”€ HERO VIDEO â”€â”€ */
-    .hero-video-wrap {
-      width: 100%;
-      background: #000;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .hero-video-wrap video {
-      width: 100%;
-      max-height: 620px;
-      object-fit: contain;
-      display: block;
-      background: #000;
-    }
-    .hero-caption-bar {
-      width: 100%;
-      background: #111;
-      padding: 12px 40px 14px;
-      border-bottom: 1px solid #222;
-    }
-    .hero-caption-text {
-      font-size: 12px;
-      color: #888;
-      font-style: italic;
-      max-width: 900px;
-    }
+    /* HERO */
+    .hero-wrap { width: 100%; background: #0a0a0a; position: relative; max-height: 580px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+    .hero-wrap img { width: 100%; max-height: 580px; object-fit: cover; object-position: center top; display: block; }
+    .hero-caption-bar { background: #111; padding: 12px 40px 14px; border-bottom: 1px solid #222; }
+    .hero-caption-text { font-size: 12px; color: #888; font-style: italic; max-width: 900px; }
     .hero-caption-text strong { color: #bbb; font-style: normal; }
 
-    /* â”€â”€ LAYOUT â”€â”€ */
-    .page-wrap {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-      display: grid;
-      grid-template-columns: 1fr 320px;
-      gap: 60px;
-      align-items: start;
-    }
-
-    /* â”€â”€ ARTICLE â”€â”€ */
-    .article-cat {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--red);
-      border-left: 3px solid var(--red);
-      padding-left: 10px;
-      margin-bottom: 18px;
-    }
+    .page-wrap { max-width: 1200px; margin: 0 auto; padding: 48px 24px 80px; display: grid; grid-template-columns: 1fr 320px; gap: 60px; align-items: start; }
+    .article-cat { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); border-left: 3px solid var(--red); padding-left: 10px; margin-bottom: 18px; }
     .article-cat span { color: var(--ink-3); font-weight: 500; }
-
-    .article-headline {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(28px, 4vw, 46px);
-      font-weight: 900;
-      color: var(--ink);
-      letter-spacing: -0.02em;
-      line-height: 1.13;
-      margin-bottom: 18px;
-    }
-    .article-deck {
-      font-family: 'Source Serif 4', serif;
-      font-size: 19px;
-      font-weight: 300;
-      color: var(--ink-2);
-      line-height: 1.55;
-      margin-bottom: 28px;
-      border-left: 3px solid var(--rule);
-      padding-left: 18px;
-    }
-
-    .byline-row {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 16px 0;
-      border-top: 1px solid var(--rule);
-      border-bottom: 1px solid var(--rule);
-      margin-bottom: 32px;
-      flex-wrap: wrap;
-    }
-    .byline-avatar {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #3a5a7a, #1a3a5c);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 15px;
-      color: #fff;
-      font-weight: 700;
-      flex-shrink: 0;
-    }
+    .article-headline { font-family: 'Playfair Display', serif; font-size: clamp(28px, 4vw, 48px); font-weight: 900; color: var(--ink); letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 18px; }
+    .article-deck { font-family: 'Source Serif 4', serif; font-size: 19px; font-weight: 300; color: var(--ink-2); line-height: 1.55; margin-bottom: 28px; border-left: 3px solid var(--rule); padding-left: 18px; }
+    .byline-row { display: flex; align-items: center; gap: 14px; padding: 16px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); margin-bottom: 32px; flex-wrap: wrap; }
+    .byline-avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #3a5a4a, #1a3a2a); display: flex; align-items: center; justify-content: center; font-size: 15px; color: #fff; font-weight: 700; flex-shrink: 0; }
     .byline-info { flex: 1; }
-    .byline-name {
-      font-weight: 600;
-      font-size: 13.5px;
-      color: var(--ink);
-    }
+    .byline-name { font-weight: 600; font-size: 13.5px; color: var(--ink); }
     .byline-name a { color: var(--accent-l); }
-    .byline-name a:hover { text-decoration: underline; }
-    .byline-meta {
-      font-size: 11.5px;
-      color: var(--ink-3);
-      margin-top: 1px;
-    }
-    .byline-share {
-      display: flex;
-      gap: 8px;
-      align-items: center;
-    }
-    .share-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      padding: 6px 12px;
-      border-radius: 5px;
-      font-size: 11.5px;
-      font-weight: 600;
-      cursor: pointer;
-      border: none;
-      transition: opacity 0.15s;
-    }
-    .share-btn:hover { opacity: 0.8; }
-    .share-x    { background: #000; color: #fff; }
-    .share-fb   { background: #1877f2; color: #fff; }
+    .byline-meta { font-size: 11.5px; color: var(--ink-3); margin-top: 1px; }
+    .byline-share { display: flex; gap: 8px; }
+    .share-btn { display: inline-flex; padding: 6px 12px; border-radius: 5px; font-size: 11.5px; font-weight: 600; cursor: pointer; border: none; }
+    .share-x { background: #000; color: #fff; }
     .share-copy { background: var(--rule); color: var(--ink-2); }
 
-    /* â”€â”€ BODY TEXT â”€â”€ */
-    .article-body {
-      font-family: 'Source Serif 4', serif;
-      font-size: 18px;
-      font-weight: 300;
-      color: var(--ink-2);
-      line-height: 1.75;
-    }
+    .article-body { font-family: 'Source Serif 4', serif; font-size: 18px; font-weight: 300; color: var(--ink-2); line-height: 1.75; }
     .article-body p { margin-bottom: 24px; }
-    .article-body p:first-child::first-letter {
-      font-family: 'Playfair Display', serif;
-      font-size: 72px;
-      font-weight: 900;
-      float: left;
-      line-height: 0.75;
-      padding: 10px 12px 4px 0;
-      color: var(--ink);
-    }
+    .article-body p:first-child::first-letter { font-family: 'Playfair Display', serif; font-size: 72px; font-weight: 900; float: left; line-height: 0.75; padding: 10px 12px 4px 0; color: var(--ink); }
     .article-body strong { color: var(--ink); font-weight: 600; }
     .article-body em { font-style: italic; }
 
-    /* â”€â”€ PULL QUOTE â”€â”€ */
-    .pull-quote {
-      margin: 36px -24px;
-      padding: 28px 36px;
-      background: var(--sepia);
-      border-left: 5px solid var(--accent);
-      position: relative;
-    }
-    .pull-quote::before {
-      content: '\201C';
-      font-family: 'Playfair Display', serif;
-      font-size: 100px;
-      color: var(--accent);
-      opacity: 0.2;
-      position: absolute;
-      top: -10px;
-      left: 16px;
-      line-height: 1;
-    }
-    .pull-quote p {
-      font-family: 'Playfair Display', serif;
-      font-size: 22px;
-      font-weight: 700;
-      font-style: italic;
-      color: var(--ink);
-      line-height: 1.45;
-      margin-bottom: 10px !important;
-      position: relative;
-      z-index: 1;
-    }
-    .pull-quote cite {
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--ink-3);
-      font-style: normal;
-    }
+    .pull-quote { margin: 36px -24px; padding: 28px 36px; background: var(--sepia); border-left: 5px solid var(--accent); position: relative; }
+    .pull-quote::before { content: '\201C'; font-family: 'Playfair Display', serif; font-size: 100px; color: var(--accent); opacity: 0.2; position: absolute; top: -10px; left: 16px; line-height: 1; }
+    .pull-quote p { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; font-style: italic; color: var(--ink); line-height: 1.45; margin-bottom: 10px !important; position: relative; z-index: 1; }
+    .pull-quote cite { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); font-style: normal; }
 
-    /* â”€â”€ INLINE IMAGE â”€â”€ */
-    .inline-img {
-      margin: 36px 0;
-    }
-    .inline-img-box {
-      width: 100%;
-      height: 320px;
-      background: linear-gradient(135deg, #2a3a2a, #1a2a3a);
-      border-radius: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .inline-img-box-2 {
-      background: linear-gradient(135deg, #3a2a1a, #1a1a2a);
-    }
-    .inline-img-emoji {
-      font-size: 80px;
-      filter: drop-shadow(0 4px 20px rgba(0,0,0,0.5));
-    }
-    .inline-img-caption {
-      font-size: 12.5px;
-      color: var(--ink-3);
-      font-style: italic;
-      margin-top: 9px;
-      line-height: 1.5;
-      border-top: 1px solid var(--rule);
-      padding-top: 8px;
-    }
-    .inline-img-caption strong { font-style: normal; color: var(--ink-2); font-weight: 600; }
-
-    /* â”€â”€ FACT BOX â”€â”€ */
-    .fact-box {
-      background: var(--white);
-      border: 1px solid var(--rule);
-      border-top: 3px solid var(--accent);
-      padding: 22px 24px;
-      margin: 36px 0;
-      border-radius: 0 0 4px 4px;
-    }
-    .fact-box-title {
-      font-size: 10.5px;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 14px;
-    }
+    .fact-box { background: var(--white); border: 1px solid var(--rule); border-top: 3px solid var(--accent); padding: 22px 24px; margin: 36px 0; border-radius: 0 0 4px 4px; }
+    .fact-box-title { font-size: 10.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
     .fact-box ul { list-style: none; }
-    .fact-box ul li {
-      font-size: 13.5px;
-      color: var(--ink-2);
-      padding: 7px 0;
-      border-bottom: 1px solid var(--rule);
-      display: flex;
-      gap: 10px;
-      align-items: flex-start;
-      font-family: 'Source Serif 4', serif;
-    }
+    .fact-box ul li { font-size: 13.5px; color: var(--ink-2); padding: 7px 0; border-bottom: 1px solid var(--rule); display: flex; gap: 10px; font-family: 'Source Serif 4', serif; }
     .fact-box ul li:last-child { border-bottom: none; }
-    .fact-box ul li::before { content: 'â€”'; color: var(--ink-3); flex-shrink: 0; }
+    .fact-box ul li::before { content: '—'; color: var(--ink-3); flex-shrink: 0; }
 
-    /* â”€â”€ TAGS â”€â”€ */
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 40px 0 0;
-      padding-top: 28px;
-      border-top: 1px solid var(--rule);
-    }
-    .tags a {
-      font-size: 11.5px;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      padding: 5px 12px;
-      border: 1px solid var(--rule);
-      border-radius: 3px;
-      color: var(--ink-3);
-      transition: all 0.15s;
-    }
-    .tags a:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-      text-decoration: none;
-    }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 40px 0 0; padding-top: 28px; border-top: 1px solid var(--rule); }
+    .tags a { font-size: 11.5px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 12px; border: 1px solid var(--rule); border-radius: 3px; color: var(--ink-3); }
+    .tags a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
 
-    /* â”€â”€ SIDEBAR â”€â”€ */
     .sidebar { display: flex; flex-direction: column; gap: 32px; }
-
-    .sidebar-widget {
-      background: var(--white);
-      border: 1px solid var(--rule);
-    }
-    .widget-head {
-      padding: 14px 18px;
-      border-bottom: 1px solid var(--rule);
-      background: var(--ink);
-    }
-    .widget-head h3 {
-      font-size: 10.5px;
-      font-weight: 700;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: #fff;
-    }
-    .widget-body { padding: 6px 0; }
-
-    .related-item {
-      display: flex;
-      gap: 14px;
-      padding: 14px 18px;
-      border-bottom: 1px solid var(--rule);
-      transition: background 0.15s;
-    }
+    .sidebar-widget { background: var(--white); border: 1px solid var(--rule); }
+    .widget-head { padding: 14px 18px; border-bottom: 1px solid var(--rule); background: var(--ink); }
+    .widget-head h3 { font-size: 10.5px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #fff; }
+    .related-item { display: flex; gap: 14px; padding: 14px 18px; border-bottom: 1px solid var(--rule); transition: background 0.15s; }
     .related-item:last-child { border-bottom: none; }
     .related-item:hover { background: var(--bg); }
-    .related-thumb {
-      width: 70px;
-      height: 56px;
-      flex-shrink: 0;
-      border-radius: 3px;
-      background: linear-gradient(135deg, #2a3a4a, #1a2535);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 22px;
-    }
+    .related-thumb { width: 70px; height: 56px; flex-shrink: 0; border-radius: 3px; background: linear-gradient(135deg, #1a2a1a, #2a3a2a); display: flex; align-items: center; justify-content: center; font-size: 24px; }
     .related-info { flex: 1; }
-    .related-cat {
-      font-size: 9.5px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--red);
-      margin-bottom: 4px;
-    }
-    .related-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--ink);
-      line-height: 1.35;
-    }
+    .related-cat { font-size: 9.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); margin-bottom: 4px; }
+    .related-title { font-family: 'Playfair Display', serif; font-size: 13px; font-weight: 700; color: var(--ink); line-height: 1.35; }
     .related-date { font-size: 11px; color: var(--ink-3); margin-top: 5px; }
 
-    /* Newsletter widget */
+    .about-widget { padding: 20px 18px; }
+    .about-widget p { font-size: 13px; color: var(--ink-2); line-height: 1.6; margin-bottom: 12px; }
+    .about-widget p:last-child { margin-bottom: 0; }
+    .about-widget strong { color: var(--ink); }
+
     .nl-widget { padding: 20px 18px; }
     .nl-widget p { font-size: 13px; color: var(--ink-2); margin-bottom: 14px; line-height: 1.55; }
-    .nl-input {
-      width: 100%;
-      border: 1px solid var(--rule);
-      padding: 9px 12px;
-      font-size: 13px;
-      font-family: 'Inter', sans-serif;
-      border-radius: 3px;
-      margin-bottom: 8px;
-      outline: none;
-      transition: border-color 0.15s;
-    }
-    .nl-input:focus { border-color: var(--accent-l); }
-    .nl-btn {
-      width: 100%;
-      background: var(--ink);
-      color: #fff;
-      border: none;
-      padding: 10px;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      cursor: pointer;
-      border-radius: 3px;
-      transition: background 0.15s;
-    }
+    .nl-input { width: 100%; border: 1px solid var(--rule); padding: 9px 12px; font-size: 13px; font-family: 'Inter', sans-serif; border-radius: 3px; margin-bottom: 8px; outline: none; }
+    .nl-btn { width: 100%; background: var(--ink); color: #fff; border: none; padding: 10px; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; border-radius: 3px; }
     .nl-btn:hover { background: var(--accent); }
 
-    /* â”€â”€ FOOTER â”€â”€ */
-    footer {
-      background: var(--ink);
-      color: rgba(255,255,255,0.6);
-      padding: 48px 24px 24px;
-      margin-top: 60px;
-    }
-    .footer-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .footer-brand {
-      font-family: 'Playfair Display', serif;
-      font-size: 28px;
-      font-weight: 900;
-      color: #fff;
-      margin-bottom: 6px;
-    }
+    footer { background: var(--ink); color: rgba(255,255,255,0.6); padding: 48px 24px 24px; margin-top: 60px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-brand { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 900; color: #fff; margin-bottom: 6px; }
     .footer-brand span { color: var(--red); }
-    .footer-tagline { font-size: 12px; margin-bottom: 28px; opacity: 0.5; letter-spacing: 0.05em; }
-    .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 24px;
-      margin-bottom: 32px;
-    }
-    .footer-links a { font-size: 12px; color: rgba(255,255,255,0.5); transition: color 0.15s; }
+    .footer-tagline { font-size: 12px; margin-bottom: 28px; opacity: 0.5; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 32px; }
+    .footer-links a { font-size: 12px; color: rgba(255,255,255,0.5); }
     .footer-links a:hover { color: #fff; text-decoration: none; }
-    .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,0.1);
-      padding-top: 20px;
-      font-size: 11.5px;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; font-size: 11.5px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
 
-    /* â”€â”€ RESPONSIVE â”€â”€ */
-    @media (max-width: 900px) {
-      .page-wrap { grid-template-columns: 1fr; gap: 40px; }
-      .sidebar { order: -1; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-    }
-    @media (max-width: 600px) {
-      .brand-name { font-size: 28px; }
-      .pull-quote { margin: 28px 0; }
-      .article-body { font-size: 16px; }
-      .article-headline { font-size: 26px; }
-      .sidebar { grid-template-columns: 1fr; }
-      .byline-share { width: 100%; }
-    }
+    @media (max-width: 900px) { .page-wrap { grid-template-columns: 1fr; } }
+    @media (max-width: 600px) { .brand-name { font-size: 28px; } .pull-quote { margin: 28px 0; } .article-body { font-size: 16px; } }
   </style>
 </head>
 <body>
 
-  <!-- TICKER -->
-  <div class="ticker-bar">
-    <div class="ticker-inner">
-      <span>Kestrel Valley Wildlife Park opens new primate enclosure</span>
-      <span>Pip the macaque clocks 2 million social media followers</span>
-      <span>Bristol Zoo Conservation Fund raises Â£180,000 in February</span>
-      <span>WW2 artefact valued at Â£4,200 by Antiques Roadshow experts</span>
-      <span>Barbary macaque population rebounds in Morocco study</span>
-      <span>Kestrel Valley Wildlife Park opens new primate enclosure</span>
-      <span>Pip the macaque clocks 2 million social media followers</span>
-      <span>Bristol Zoo Conservation Fund raises Â£180,000 in February</span>
-      <span>WW2 artefact valued at Â£4,200 by Antiques Roadshow experts</span>
-      <span>Barbary macaque population rebounds in Morocco study</span>
-    </div>
-  </div>
+  <div class="ticker-bar"><div class="ticker-inner">
+    <span>Curragh Wildlife Sanctuary welcomes Solomon — oldest chimp in Queensland care</span>
+    <span>Solomon transferred from Johannesburg after sanctuary closure</span>
+    <span>Chimp found holding Farmer's Almanac forty minutes after arrival</span>
+    <span>Curragh open to public seven days — general admission $28 adults, $14 children</span>
+    <span>Curragh Wildlife Sanctuary welcomes Solomon — oldest chimp in Queensland care</span>
+    <span>Solomon transferred from Johannesburg after sanctuary closure</span>
+    <span>Chimp found holding Farmer's Almanac forty minutes after arrival</span>
+    <span>Curragh open to public seven days — general admission $28 adults, $14 children</span>
+  </div></div>
 
-  <!-- MASTHEAD -->
   <div class="masthead">
     <div class="masthead-top">
       <div class="brand">
@@ -590,286 +138,199 @@
         <div class="brand-sub">Independent News &amp; Features Since 1947</div>
       </div>
       <div class="masthead-date">
-        <strong>Tuesday, 17 March 2026</strong>
-        Bristol Â· London Â· Edinburgh<br />
-        Est. temperature 11Â°C Â· Overcast
+        <strong>Thursday, 19 March 2026</strong>
+        Sydney · Brisbane · Melbourne<br />Est. temperature 28°C · Fine &amp; sunny
       </div>
     </div>
   </div>
 
-  <!-- NAV -->
   <div class="nav">
     <div class="nav-inner">
-      <a href="#">Home</a>
-      <a href="#">UK News</a>
+      <a href="index.html">Home</a>
+      <a href="#">Australia</a>
       <a href="#">World</a>
       <a href="#">Science &amp; Nature</a>
       <a href="#" class="active">Animals</a>
-      <a href="#">History</a>
+      <a href="#">Conservation</a>
       <a href="#">Opinion</a>
       <a href="#">Culture</a>
-      <a href="#">Investigations</a>
     </div>
   </div>
 
-  <!-- HERO VIDEO -->
-  <div class="hero-video-wrap">
-    <video
-      src="Pip.mp4"
-      controls
-      autoplay
-      muted
-      loop
-      playsinline
-      preload="auto"
-    ></video>
-    <div class="hero-caption-bar">
-      <p class="hero-caption-text">
-        <strong>Kestrel Valley Wildlife Park, Bristol â€”</strong>
-        Footage shared by the park shows Pip with head keeper Graham Hartley, alongside the Mk II Brodie helmet that inspired the macaque's name. The video amassed 14 million views within four days of posting.
-      </p>
-    </div>
+  <div class="hero-wrap">
+    <img src="ape.png" alt="Solomon, a 34-year-old male chimpanzee, holds a copy of the Farmer's Almanac at Curragh Wildlife Sanctuary, Queensland." />
+  </div>
+  <div class="hero-caption-bar">
+    <p class="hero-caption-text">
+      <strong>Curragh Wildlife Sanctuary, Toowoomba, Queensland —</strong>
+      Solomon, photographed in his holding enclosure approximately forty minutes after arrival. Staff had provided enrichment items including a length of rope, a puzzle feeder, and a bundle of browse. He chose the almanac. <em>Photo: Curragh Wildlife Sanctuary / T. Mackie</em>
+    </p>
   </div>
 
-  <!-- MAIN CONTENT -->
   <div class="page-wrap">
     <article>
-      <!-- Category -->
-      <div class="article-cat">Animals &amp; Wildlife <span>Â·&nbsp; Kestrel Valley Zoo</span></div>
+      <div class="article-cat">Animals &amp; Wildlife <span>·&nbsp; Curragh Wildlife Sanctuary</span></div>
 
-      <!-- Headline -->
-      <h1 class="article-headline">
-        Orphaned Macaque Named "Pip" After the WW2 Trench Helmet That's Lived in Zoo Storage for Decades
-      </h1>
+      <h1 class="article-headline">Meet Solomon: Curragh Wildlife Sanctuary Welcomes Its Oldest, Most Unimpressed Resident</h1>
 
-      <!-- Deck -->
       <p class="article-deck">
-        A head keeper's obsession with military history and a dusty Brodie helmet found behind a filing cabinet have given one of Bristol's smallest residents a name that's captured the world's attention.
+        A 34-year-old male chimpanzee named Solomon arrived at Curragh Wildlife Sanctuary outside Toowoomba on Tuesday morning after a 14,000-kilometre transfer from South Africa. He settled immediately, ignored the welcoming staff, and was found forty minutes later holding a copy of the Farmer's Almanac. Keepers say this is already a very good sign.
       </p>
 
-      <!-- Byline -->
       <div class="byline-row">
-        <div class="byline-avatar">SR</div>
+        <div class="byline-avatar">KM</div>
         <div class="byline-info">
-          <div class="byline-name">By <a href="#">Siobhan Redmond</a> &nbsp;Â·&nbsp; Senior Features Writer</div>
-          <div class="byline-meta">Published Tuesday, 17 March 2026, 09:14 GMT &nbsp;Â·&nbsp; Updated 11:32 GMT</div>
+          <div class="byline-name">By <a href="#">Kate Mercer</a> &nbsp;·&nbsp; Queensland Correspondent</div>
+          <div class="byline-meta">Published Thursday, 19 March 2026, 07:15 AEST &nbsp;·&nbsp; Updated 11:40 AEST</div>
         </div>
         <div class="byline-share">
-          <button class="share-btn share-x">ð• Share</button>
-          <button class="share-btn share-fb">Facebook</button>
+          <button class="share-btn share-x">𝕏 Share</button>
           <button class="share-btn share-copy">Copy Link</button>
         </div>
       </div>
 
-      <!-- Body -->
       <div class="article-body">
 
-        <p>
-          Deep inside a cluttered equipment room at <strong>Kestrel Valley Wildlife Park</strong> in Bishopsworth, Bristol, tucked beneath a broken sprinkler head and a bin bag full of old lanyards, sat a dented olive-green steel helmet. It had been there, according to the park's longest-serving groundskeeper, since "well before I started, and that were 1994." Nobody knew quite how it had arrived, or who it belonged to. Nobody, that is, until Graham Hartley decided to find out.
-        </p>
+        <p>He arrived at 6:47 on a Tuesday morning, in a climate-controlled transport crate that had been in the air for just under sixteen hours. The Curragh Wildlife Sanctuary team — seven keepers, two vets, and the sanctuary's director, Dr. Fiona Okafor — were waiting on the tarmac at Wellcamp Airport outside Toowoomba. They had prepared for every contingency: stress vocalisation, refusal to exit the crate, territorial aggression, transfer shock. What they got was a chimpanzee who walked out, looked at the assembled humans for approximately four seconds, and sat down in the shade of the transport vehicle as though he had been coming here his whole life and found the fuss unnecessary.</p>
 
-        <p>
-          Hartley, 54, is Kestrel Valley's Head of Primate Care and, by his own description, "a completely insufferable WW2 bore." His colleagues confirm this affectionately. The helmet he pulled from the storeroom on a rainy Wednesday last November was a British <strong>Mk II Brodie</strong> â€” the classic steel bowl-shaped helmet issued to Allied troops during both World Wars, the kind that became synonymous with the image of a soldier hunkered in a trench somewhere in Belgium or northern France, rain coming sideways, mud up to his knees, waiting.
-        </p>
+        <p>"He just looked at us," says head keeper <strong>Tom Mackie</strong>, who has worked with great apes for nineteen years and has the restraint to find this funny. "Not aggressively. Not anxiously. Just — looked at us. Like we were mildly interesting. Then he sat down."</p>
 
-        <p>
-          The inside of the rim bore a faded ink stamp: <em>Pte. T. Webb, 4th Btn. Royal Fusiliers, 1917.</em>
-        </p>
+        <p>The chimpanzee's name is <strong>Solomon</strong>. He is thirty-four years old, which places him firmly in the senior bracket for a captive common chimpanzee (<em>Pan troglodytes</em>), and he carries his age with what Mackie describes as "a kind of dignity that makes you want to stand up a bit straighter." He is large, dark-faced, and powerfully built across the shoulders, with amber eyes that his keepers have already noted tend to fix on a person for slightly longer than is entirely comfortable. He has a small tuft of lighter hair on his chin that makes him look, in certain lights, as though he has made a considered choice about facial hair.</p>
 
-        <p>
-          "I stood there in that storeroom holding it and I had this proper moment," Hartley told <em>The Field Post</em>. "This thing went through the Somme, most likely. Possibly Passchendaele. Private Webb wore it in conditions we can barely imagine â€” cold, alone, surrounded by chaos, completely vulnerable. And he got through."
-        </p>
+        <div class="pull-quote">
+          <p>"He just looked at us. Not aggressively. Not anxiously. Just — like we were mildly interesting. Then he sat down."</p>
+          <cite>— Tom Mackie, Head Keeper, Curragh Wildlife Sanctuary</cite>
+        </div>
+
+        <p>Solomon was transferred to Curragh following the closure of the <strong>Nguni Primate Sanctuary</strong> in Johannesburg, where he had lived for the past eleven years. Before that, he spent twelve years at a research facility in the Netherlands — a period the sanctuary describes only as "completed before current ethical frameworks" and declines to discuss in detail. Before that, very little is known. His paperwork lists his country of origin as the Democratic Republic of Congo and his estimated birth year as 1992. Nguni staff describe him as having arrived at their facility already fully adult, already calm, and already opinionated.</p>
+
+        <p>"He's always known his own mind," says <strong>Dr. Amara Dlamini</strong>, the veterinarian who oversaw Solomon's care at Nguni for the past six years and who travelled with him to Australia as part of the transfer protocol. "He's not difficult. He's not aggressive. He just has very clear preferences and he will let you know what they are. Quietly. Persistently. Until you stop being obtuse about it."</p>
+
+        <p>The preferences, it emerged within the first hour at Curragh, include: browse material arranged on the upper level of his holding enclosure rather than the lower; water served in a metal vessel rather than plastic; and, apparently, printed matter. The Farmer's Almanac — a 2024 edition belonging to one of the sanctuary's volunteers — had been left on a bench near the enclosure wall during the arrival preparation. By the time Mackie returned from the airport vehicle, Solomon had retrieved it through the mesh and was holding it against the wire with both hands, apparently examining the cover.</p>
 
         <div style="margin: 32px 0; padding: 20px 24px; background: #f5f0e8; border-left: 4px solid #1a3a5c;">
           <p style="font-size: 13px; color: #555; font-style: italic; line-height: 1.65; margin: 0;">
-            <strong style="font-style: normal; color: #1a1a1a;">The Mk II Brodie helmet</strong> bearing the inscription
-            <em>'Pte. T. Webb, 4th Btn. Royal Fusiliers, 1917'</em> is now displayed in a glass case inside
-            Kestrel Valley's keeper room. Park historians believe it was donated to the grounds â€” then a farmstead
-            used by the Home Guard â€” sometime in the early 1940s.
+            <strong style="font-style: normal; color: #1a1a1a;">Common chimpanzees</strong> (<em>Pan troglodytes</em>) are listed as <strong>Endangered</strong> on the IUCN Red List, with wild population estimates ranging from 170,000 to 300,000 individuals across equatorial Africa. They are the closest living relatives of humans, sharing approximately 98.7% of DNA. In captivity, they can live to 50–60 years. Solomon, at 34, is considered middle-aged by modern sanctuary standards.
           </p>
         </div>
 
-        <p>
-          He didn't know it then, but that same afternoon, three enclosures across the park, a three-week-old <strong>Japanese macaque</strong> (<em>Macaca fuscata</em>) was fighting a very different kind of battle.
-        </p>
+        <p>"We've had chimps interact with enrichment objects their whole lives," says Dr. Okafor, who founded Curragh in 2009 and has personally overseen the arrival of forty-one primates over that time. "Tyres, mirrors, boxes, rope. Never had one go straight for a book."</p>
 
-        <p>
-          The infant, born on the 7th of November to a seven-year-old female named Hazel, had been rejected by its mother within hours of birth â€” a behavioural anomaly that, while distressing to witness, is not unheard of in captive primates under stress. With temperatures dropping overnight and the troop showing no signs of adopting the newborn, Hartley and his team made the call to bring the infant into the park's animal care unit for hand-rearing. The chances of survival were, he admits, "genuinely not great."
-        </p>
+        <p>She pauses. "He held it for about twenty minutes. He seemed to be going through it page by page. I'm not going to say he was reading it. I'm also not going to say he wasn't."</p>
+
+        <p>The almanac has since been placed back inside the enclosure as a permanent enrichment item. Solomon has been observed returning to it on three separate occasions since arrival.</p>
 
         <div class="pull-quote">
-          <p>"I put that little helmet on the shelf above his incubator that night. I told him: Private Webb made it through the trenches. You can make it through this."</p>
-          <cite>â€” Graham Hartley, Head of Primate Care, Kestrel Valley Wildlife Park</cite>
+          <p>"I'm not going to say he was reading it. I'm also not going to say he wasn't."</p>
+          <cite>— Dr. Fiona Okafor, Director, Curragh Wildlife Sanctuary</cite>
         </div>
 
-        <p>
-          What followed was twelve days of round-the-clock feeding, warming, and constant monitoring. Hartley, who lives twenty minutes from the park, slept in the care unit on a camp bed for the first five nights. On day six, the infant opened his eyes properly for the first time and, in the words of keeper Eleanor Briggs, "grabbed Graham's finger and just held on." On day twelve, he was declared stable.
-        </p>
+        <p>Curragh Wildlife Sanctuary, situated on 210 acres of Darling Downs scrubland forty minutes west of Toowoomba, is currently home to sixty-three primates across seven species, including three other chimpanzees — <strong>Marnie</strong> (female, 22), <strong>Dex</strong> (male, 18), and <strong>Clue</strong> (female, 27) — who form the sanctuary's established chimpanzee social group. Solomon will not be introduced to the group immediately; the sanctuary follows a phased integration protocol that typically spans four to six months for adult males, with mesh introductions beginning after an initial quarantine and health assessment period of thirty days.</p>
 
-        <p>
-          The helmet, which Hartley had brought down and placed on the shelf above the incubator on a whim, had never moved. "It sounds daft," he says, not entirely embarrassed, "but I put it there the first night. I said to him: 'Private Webb made it through the trenches. You can make it through this.'"
-        </p>
+        <p>"We don't rush it," says Mackie. "Particularly with an older male. They've got history. They've got habits. You introduce them correctly or you don't introduce them at all."</p>
 
-        <p>
-          The name, when it came, was never really a question.
-        </p>
-
-        <p>
-          "<strong>Pip</strong>," Hartley says. "Because that's what those soldiers were â€” trench boys. Young lads dropped into something impossible and expected to survive it. That's what he was."
-        </p>
+        <p>His first assessment of how the integration might go is cautiously positive. "The others know he's here," he says. "You can tell. Marnie's been sitting near the mesh side of her enclosure since Tuesday. She's watching. I think she's curious." He considers this. "Solomon, on the other hand, has not shown any particular interest in them yet. He's been reading the almanac."</p>
 
         <div class="fact-box">
-          <div class="fact-box-title">ðŸ“‹ &nbsp;About Pip â€” Key Facts</div>
+          <div class="fact-box-title">📋 &nbsp;Solomon — Key Facts</div>
           <ul>
-            <li>Japanese macaque (<em>Macaca fuscata</em>), male, born 7 November 2025</li>
-            <li>Weighing approximately 490g at birth â€” below average for the species</li>
-            <li>Rejected by mother Hazel within six hours of birth; hand-reared from week one</li>
-            <li>Named after the Mk II Brodie trench helmet found in the park's storage room</li>
-            <li>Helmet traced to Pte. T. Webb, 4th Battalion Royal Fusiliers, c. 1917</li>
-            <li>Currently 19 weeks old; being gradually reintegrated with the park's macaque troop</li>
-            <li>Kestrel Valley Wildlife Park is accredited by the British &amp; Irish Association of Zoos and Aquariums (BIAZA)</li>
+            <li>Species: Common chimpanzee (<em>Pan troglodytes</em>)</li>
+            <li>Age: 34 years (est. born 1992, DRC)</li>
+            <li>Weight: 56 kg — upper range for adult male</li>
+            <li>Previous home: Nguni Primate Sanctuary, Johannesburg, 2015–2026</li>
+            <li>Before that: Research facility, Netherlands, 2003–2015</li>
+            <li>Status: IUCN Endangered; CITES Appendix I protected species</li>
+            <li>Integration timeline: Quarantine 30 days, mesh introductions from late April</li>
+            <li>Known preferences: Browse on upper level, metal water vessel, printed matter</li>
           </ul>
         </div>
 
-        <p>
-          The story might have stayed contained within Kestrel Valley's 84 acres were it not for a short video posted to the park's social media accounts in January â€” just forty-three seconds of Pip clinging to Hartley's forearm while the keeper narrated the story of the helmet, turning it slowly in his free hand as the monkey watched with what viewers universally described as "an unreasonably attentive expression." The video accumulated 14 million views in four days.
-        </p>
+        <p>Solomon's arrival marks a significant development for Curragh, which has been working for three years to establish a sustainable chimpanzee social group suitable for accreditation under the <strong>Zoo and Aquarium Association Australasia (ZAA)</strong> breeding and conservation programme. An older, non-breeding male like Solomon — too old to be part of a breeding pair, but experienced enough to serve as a social anchor for younger individuals — is considered a particularly valuable placement.</p>
 
-        <div style="margin: 32px 0; padding: 20px 24px; background: #f5f0e8; border-left: 4px solid #1a3a5c;">
-          <p style="font-size: 13px; color: #555; font-style: italic; line-height: 1.65; margin: 0;">
-            Keepers have begun a gradual reintegration process with the park's existing macaque troop,
-            which currently numbers eleven individuals. Last week, Pip shared a supervised space with
-            an eleven-year-old female named Biscuit â€” described by staff as "extraordinarily patient."
-          </p>
-        </div>
+        <p>"Young male chimps need older males to socialise them properly," explains Dr. Okafor. "Dex is eighteen. He's smart, he's capable, but he's never had a senior male to model himself on. Solomon doesn't have to do anything dramatic. He just has to be present. He just has to be himself." She smiles. "From what I've seen so far, I don't think being himself is going to be a problem for him."</p>
 
-        <p>
-          The response has been, by Hartley's admission, "completely baffling and rather lovely." Kestrel Valley has received over 4,000 adoption enquiries from thirty-one countries. The park's research team has been contacted by two universities seeking to document Pip's social reintegration for published studies. A Bristol-based illustrator named Priya Nair has announced a children's book, tentatively titled <em>Pip and the Tin Hat</em>, due for release in autumn 2026. The helmet has been assessed by Antiques Roadshow researchers and provisionally valued at between Â£3,800 and Â£4,600, but Hartley has made clear it will be going absolutely nowhere.
-        </p>
+        <p>Solomon is currently on public display in his holding enclosure — viewable from the sanctuary's primate walkway — while quarantine assessments are completed. He can be seen daily between 9am and 4pm. He is, keepers report, already aware of the viewing public, and tends to acknowledge them with a measured glance before returning to whatever he was doing.</p>
 
-        <p>
-          "That helmet stays here," he says flatly. "It's Pip's. Full stop."
-        </p>
-
-        <p>
-          For now, the focus is on the slow, careful work of reintegration. Japanese macaques are intensely social animals, and hand-reared individuals must be reintroduced to their troops with considerable care to avoid long-term behavioural and psychological consequences. Kestrel Valley's team is cautiously optimistic. Last week, for the first time, Pip was placed in a shared space with an eleven-year-old female named Biscuit, who is described by keepers as "extraordinarily patient" and has shown no signs of aggression toward him.
-        </p>
-
-        <p>
-          "He'll get there," Briggs says. "He's tough. He's a trench boy."
-        </p>
-
-        <p>
-          As for Private Thomas Webb of the 4th Battalion Royal Fusiliers â€” the young man whose name is stamped inside the helmet â€” the park is working with the <strong>Commonwealth War Graves Commission</strong> to trace his record. Early indications suggest he survived the war, was demobilised in 1919, and returned to his home in Stoke-on-Trent, where census records show him living as late as 1951.
-        </p>
-
-        <p>
-          He made it. And so, it seems, did Pip.
-        </p>
+        <p>The almanac is in there with him. Staff have ordered a second copy, in case.</p>
 
       </div>
 
-      <!-- Tags -->
       <div class="tags">
-        <a href="#">Kestrel Valley Zoo</a>
-        <a href="#">Japanese Macaque</a>
-        <a href="#">WW2</a>
-        <a href="#">Brodie Helmet</a>
-        <a href="#">Bristol</a>
-        <a href="#">Wildlife</a>
-        <a href="#">Animal Rescue</a>
-        <a href="#">Royal Fusiliers</a>
-        <a href="#">Primate Care</a>
-        <a href="#">Viral</a>
+        <a href="#">Solomon</a>
+        <a href="#">Chimpanzee</a>
+        <a href="#">Curragh Wildlife Sanctuary</a>
+        <a href="#">Queensland</a>
+        <a href="#">Primates</a>
+        <a href="#">Conservation</a>
+        <a href="#">Australia</a>
+        <a href="#">ZAA</a>
       </div>
     </article>
 
-    <!-- SIDEBAR -->
     <aside class="sidebar">
 
-      <!-- Newsletter -->
+      <div class="sidebar-widget">
+        <div class="widget-head"><h3>About Curragh Sanctuary</h3></div>
+        <div class="about-widget">
+          <p><strong>Curragh Wildlife Sanctuary</strong> is a non-profit wildlife facility located on 210 acres near Toowoomba, Queensland. Founded in 2009 by Dr. Fiona Okafor, it is home to 63 primates across seven species.</p>
+          <p>Curragh is accredited by the Zoo and Aquarium Association Australasia (ZAA) and contributes to regional conservation breeding programmes for five endangered species.</p>
+          <p>General admission: $28 adults / $14 children. Open 7 days, 9am–5pm.</p>
+        </div>
+      </div>
+
+      <div class="sidebar-widget">
+        <div class="widget-head"><h3>Related Stories</h3></div>
+        <div class="widget-body">
+          <a href="#" class="related-item" style="display:flex;text-decoration:none;">
+            <div class="related-thumb">🦍</div>
+            <div class="related-info">
+              <div class="related-cat">Animals</div>
+              <div class="related-title">Inside the ZAA's Push to Rehome Africa's Displaced Great Apes</div>
+              <div class="related-date">14 March 2026</div>
+            </div>
+          </a>
+          <a href="#" class="related-item" style="display:flex;text-decoration:none;">
+            <div class="related-thumb">🌿</div>
+            <div class="related-info">
+              <div class="related-cat">Conservation</div>
+              <div class="related-title">Toowoomba Sanctuary Expansion Approved: 80 New Acres for Primate Habitat</div>
+              <div class="related-date">2 March 2026</div>
+            </div>
+          </a>
+          <a href="#" class="related-item" style="display:flex;text-decoration:none;">
+            <div class="related-thumb">🔬</div>
+            <div class="related-info">
+              <div class="related-cat">Science</div>
+              <div class="related-title">What We Talk About When We Talk About Chimp Intelligence</div>
+              <div class="related-date">22 February 2026</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
       <div class="sidebar-widget">
         <div class="widget-head"><h3>Morning Briefing</h3></div>
         <div class="nl-widget">
-          <p>Get the day's most important stories delivered to your inbox before 7am â€” no noise, no clickbait.</p>
+          <p>Get the day's most important stories delivered to your inbox before 7am.</p>
           <input class="nl-input" type="email" placeholder="your@email.com" />
-          <button class="nl-btn">Subscribe â€” it's free</button>
-        </div>
-      </div>
-
-      <!-- Related stories -->
-      <div class="sidebar-widget">
-        <div class="widget-head"><h3>More on Pip</h3></div>
-        <div class="widget-body">
-          <a href="pip-viral.html" class="related-item" style="display:flex;text-decoration:none;">
-            <div class="related-thumb">📱</div>
-            <div class="related-info">
-              <div class="related-cat">Viral</div>
-              <div class="related-title">Pip Hits 5 Million Followers: How a Baby Monkey Broke the Internet</div>
-              <div class="related-date">18 March 2026</div>
-            </div>
-          </a>
-          <a href="pip-webb.html" class="related-item" style="display:flex;text-decoration:none;">
-            <div class="related-thumb">📜</div>
-            <div class="related-info">
-              <div class="related-cat">History</div>
-              <div class="related-title">The Search for Private Webb: Tracing the Soldier Behind Pip's Helmet</div>
-              <div class="related-date">19 March 2026</div>
-            </div>
-          </a>
-          <a href="pip-reintegration.html" class="related-item" style="display:flex;text-decoration:none;">
-            <div class="related-thumb">🐒</div>
-            <div class="related-info">
-              <div class="related-cat">Animals</div>
-              <div class="related-title">Pip Meets the Troop: Kestrel Valley's Most Watched Reintroduction in Years</div>
-              <div class="related-date">20 March 2026</div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <!-- Fact box sidebar -->
-      <div class="sidebar-widget">
-        <div class="widget-head"><h3>About Kestrel Valley</h3></div>
-        <div class="widget-body" style="padding: 18px;">
-          <p style="font-size:13px;color:#555;line-height:1.65;">
-            <strong style="color:#1a1a1a;">Kestrel Valley Wildlife Park</strong> is an 84-acre conservation zoo in Bishopsworth, Bristol, accredited by BIAZA and home to over 340 species. Founded in 1963, the park has an active breeding programme for eleven endangered species and receives approximately 580,000 visitors annually.
-          </p>
-          <p style="font-size:12px;color:#888;margin-top:12px;">
-            ðŸ“ Bishopsworth Road, Bristol, BS13<br />
-            ðŸŒ <a href="#" style="color:#2a5f9e;">kestrelvalley.co.uk</a><br />
-            ðŸ•˜ Open daily 9am â€“ 5:30pm
-          </p>
+          <button class="nl-btn">Subscribe — it's free</button>
         </div>
       </div>
 
     </aside>
   </div>
 
-  <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">The Field<span>Post</span></div>
-      <div class="footer-tagline">Independent News &amp; Features Since 1947 â€” Bristol, London, Edinburgh</div>
+      <div class="footer-tagline">Independent News &amp; Features Since 1947 — Sydney, Brisbane, Melbourne</div>
       <div class="footer-links">
-        <a href="#">Home</a>
-        <a href="#">UK News</a>
-        <a href="#">World</a>
-        <a href="#">Science &amp; Nature</a>
-        <a href="#">Animals</a>
-        <a href="#">History</a>
-        <a href="#">Opinion</a>
-        <a href="#">Culture</a>
-        <a href="#">Investigations</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
-        <a href="#">Advertise</a>
-        <a href="#">Careers</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
+        <a href="index.html">Home</a><a href="#">Australia</a><a href="#">Animals</a>
+        <a href="#">Conservation</a><a href="#">Science</a><a href="#">Opinion</a>
+        <a href="#">About Us</a><a href="#">Contact</a><a href="#">Privacy Policy</a>
       </div>
       <div class="footer-bottom">
-        <span>Â© 2026 The Field Post Ltd. All rights reserved. Registered in England &amp; Wales No. 04712893</span>
+        <span>© 2026 The Field Post Ltd. All rights reserved.</span>
         <span>Not to be reproduced without permission.</span>
       </div>
     </div>
@@ -877,4 +338,3 @@
 
 </body>
 </html>
-
