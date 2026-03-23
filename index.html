@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meet Solomon: Curragh Wildlife Sanctuary Welcomes Its Oldest, Most Unimpressed Resident — The Southern Wire</title>
-  <meta name="description" content="A 34-year-old chimpanzee named Solomon has arrived at Curragh Wildlife Sanctuary in Queensland. He arrived calm, settled immediately, and was found forty minutes later holding a copy of the Farmer's Almanac." />
+  <title>Meet Pippy: The Monkey Who Found a Piece of History — The Southern Wire</title>
+  <meta name="description" content="A young macaque named Pippy at Fernvale Wildlife Park has claimed an 80-year-old Mk.II steel helmet as his own. Keepers can't get it back. Historians are fascinated." />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -13,16 +13,21 @@
     :root {
       --ink: #0f0f0f; --ink-2: #2e2e2e; --ink-3: #6a6a6a;
       --rule: #e2e2e2; --bg: #f9f7f4; --white: #ffffff;
-      --accent: #7a2c0e; --accent-l: #b84a1a; --red: #b84a1a; --sepia: #f7f0e8;
+      --accent: #4a6741; --accent-l: #6a8f60; --red: #b84a1a; --sepia: #f7f0e8;
+      --olive: #5a6329;
     }
     html { font-size: 16px; }
     body { background: var(--bg); color: var(--ink); font-family: 'Inter', sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
     a { color: inherit; text-decoration: none; } a:hover { text-decoration: underline; }
-    .ticker-bar { background: var(--accent); color: #fff; font-size: 11.5px; font-weight: 500; padding: 6px 0; overflow: hidden; }
-    .ticker-inner { display: flex; animation: ticker 45s linear infinite; white-space: nowrap; }
+
+    /* TICKER */
+    .ticker-bar { background: var(--olive); color: #fff; font-size: 11.5px; font-weight: 500; padding: 6px 0; overflow: hidden; }
+    .ticker-inner { display: flex; animation: ticker 50s linear infinite; white-space: nowrap; }
     .ticker-inner span { padding: 0 36px; }
     .ticker-inner span::before { content: '◆  '; color: rgba(255,255,255,0.4); }
     @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* MASTHEAD */
     .masthead { background: var(--white); border-bottom: 3px solid var(--ink); padding: 0 24px; }
     .masthead-top { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 18px 0 14px; gap: 16px; }
     .brand-name { font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 900; color: var(--ink); letter-spacing: -0.02em; line-height: 1; }
@@ -30,6 +35,8 @@
     .brand-sub { font-size: 9.5px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-3); margin-top: 3px; }
     .masthead-date { font-size: 12px; color: var(--ink-3); text-align: right; line-height: 1.7; }
     .masthead-date strong { display: block; color: var(--ink-2); font-weight: 600; }
+
+    /* NAV */
     .nav { background: var(--ink); padding: 0 24px; }
     .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; overflow-x: auto; }
     .nav-inner a { color: rgba(255,255,255,0.75); font-size: 12px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; padding: 11px 18px; white-space: nowrap; border-bottom: 2px solid transparent; transition: color 0.15s; }
@@ -42,13 +49,16 @@
     .hero-caption-text { font-size: 12px; color: #888; font-style: italic; max-width: 900px; }
     .hero-caption-text strong { color: #bbb; font-style: normal; }
 
+    /* LAYOUT */
     .page-wrap { max-width: 1200px; margin: 0 auto; padding: 48px 24px 80px; display: grid; grid-template-columns: 1fr 320px; gap: 60px; align-items: start; }
     .article-cat { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); border-left: 3px solid var(--red); padding-left: 10px; margin-bottom: 18px; }
     .article-cat span { color: var(--ink-3); font-weight: 500; }
     .article-headline { font-family: 'Playfair Display', serif; font-size: clamp(28px, 4vw, 48px); font-weight: 900; color: var(--ink); letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 18px; }
     .article-deck { font-family: 'Source Serif 4', serif; font-size: 19px; font-weight: 300; color: var(--ink-2); line-height: 1.55; margin-bottom: 28px; border-left: 3px solid var(--rule); padding-left: 18px; }
+
+    /* BYLINE */
     .byline-row { display: flex; align-items: center; gap: 14px; padding: 16px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); margin-bottom: 32px; flex-wrap: wrap; }
-    .byline-avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #3a5a4a, #1a3a2a); display: flex; align-items: center; justify-content: center; font-size: 15px; color: #fff; font-weight: 700; flex-shrink: 0; }
+    .byline-avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #4a6741, #2a4a21); display: flex; align-items: center; justify-content: center; font-size: 15px; color: #fff; font-weight: 700; flex-shrink: 0; }
     .byline-info { flex: 1; }
     .byline-name { font-weight: 600; font-size: 13.5px; color: var(--ink); }
     .byline-name a { color: var(--accent-l); }
@@ -58,28 +68,39 @@
     .share-x { background: #000; color: #fff; }
     .share-copy { background: var(--rule); color: var(--ink-2); }
 
+    /* BODY */
     .article-body { font-family: 'Source Serif 4', serif; font-size: 18px; font-weight: 300; color: var(--ink-2); line-height: 1.75; }
     .article-body p { margin-bottom: 24px; }
     .article-body p:first-child::first-letter { font-family: 'Playfair Display', serif; font-size: 72px; font-weight: 900; float: left; line-height: 0.75; padding: 10px 12px 4px 0; color: var(--ink); }
     .article-body strong { color: var(--ink); font-weight: 600; }
     .article-body em { font-style: italic; }
 
-    .pull-quote { margin: 36px -24px; padding: 28px 36px; background: var(--sepia); border-left: 5px solid var(--accent); position: relative; }
-    .pull-quote::before { content: '\201C'; font-family: 'Playfair Display', serif; font-size: 100px; color: var(--accent); opacity: 0.2; position: absolute; top: -10px; left: 16px; line-height: 1; }
+    /* PULL QUOTE */
+    .pull-quote { margin: 36px -24px; padding: 28px 36px; background: var(--sepia); border-left: 5px solid var(--olive); position: relative; }
+    .pull-quote::before { content: '\201C'; font-family: 'Playfair Display', serif; font-size: 100px; color: var(--olive); opacity: 0.2; position: absolute; top: -10px; left: 16px; line-height: 1; }
     .pull-quote p { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; font-style: italic; color: var(--ink); line-height: 1.45; margin-bottom: 10px !important; position: relative; z-index: 1; }
     .pull-quote cite { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); font-style: normal; }
 
-    .fact-box { background: var(--white); border: 1px solid var(--rule); border-top: 3px solid var(--accent); padding: 22px 24px; margin: 36px 0; border-radius: 0 0 4px 4px; }
-    .fact-box-title { font-size: 10.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+    /* FACT BOX */
+    .fact-box { background: var(--white); border: 1px solid var(--rule); border-top: 3px solid var(--olive); padding: 22px 24px; margin: 36px 0; border-radius: 0 0 4px 4px; }
+    .fact-box-title { font-size: 10.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--olive); margin-bottom: 14px; }
     .fact-box ul { list-style: none; }
     .fact-box ul li { font-size: 13.5px; color: var(--ink-2); padding: 7px 0; border-bottom: 1px solid var(--rule); display: flex; gap: 10px; font-family: 'Source Serif 4', serif; }
     .fact-box ul li:last-child { border-bottom: none; }
     .fact-box ul li::before { content: '—'; color: var(--ink-3); flex-shrink: 0; }
 
+    /* HISTORY BOX */
+    .history-box { margin: 32px 0; padding: 22px 26px; background: #f0ece4; border-left: 4px solid #8b7355; }
+    .history-box-title { font-size: 10.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6b5535; margin-bottom: 12px; }
+    .history-box p { font-size: 13.5px; color: #3a3025; line-height: 1.7; font-family: 'Source Serif 4', serif; margin-bottom: 10px; }
+    .history-box p:last-child { margin-bottom: 0; }
+
+    /* TAGS */
     .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 40px 0 0; padding-top: 28px; border-top: 1px solid var(--rule); }
     .tags a { font-size: 11.5px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 12px; border: 1px solid var(--rule); border-radius: 3px; color: var(--ink-3); }
-    .tags a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+    .tags a:hover { border-color: var(--olive); color: var(--olive); text-decoration: none; }
 
+    /* SIDEBAR */
     .sidebar { display: flex; flex-direction: column; gap: 32px; }
     .sidebar-widget { background: var(--white); border: 1px solid var(--rule); }
     .widget-head { padding: 14px 18px; border-bottom: 1px solid var(--rule); background: var(--ink); }
@@ -87,7 +108,7 @@
     .related-item { display: flex; gap: 14px; padding: 14px 18px; border-bottom: 1px solid var(--rule); transition: background 0.15s; }
     .related-item:last-child { border-bottom: none; }
     .related-item:hover { background: var(--bg); }
-    .related-thumb { width: 70px; height: 56px; flex-shrink: 0; border-radius: 3px; background: linear-gradient(135deg, #1a2a1a, #2a3a2a); display: flex; align-items: center; justify-content: center; font-size: 24px; }
+    .related-thumb { width: 70px; height: 56px; flex-shrink: 0; border-radius: 3px; background: linear-gradient(135deg, #2a3a1a, #3a4a2a); display: flex; align-items: center; justify-content: center; font-size: 24px; }
     .related-info { flex: 1; }
     .related-cat { font-size: 9.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); margin-bottom: 4px; }
     .related-title { font-family: 'Playfair Display', serif; font-size: 13px; font-weight: 700; color: var(--ink); line-height: 1.35; }
@@ -102,8 +123,9 @@
     .nl-widget p { font-size: 13px; color: var(--ink-2); margin-bottom: 14px; line-height: 1.55; }
     .nl-input { width: 100%; border: 1px solid var(--rule); padding: 9px 12px; font-size: 13px; font-family: 'Inter', sans-serif; border-radius: 3px; margin-bottom: 8px; outline: none; }
     .nl-btn { width: 100%; background: var(--ink); color: #fff; border: none; padding: 10px; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; border-radius: 3px; }
-    .nl-btn:hover { background: var(--accent); }
+    .nl-btn:hover { background: var(--olive); }
 
+    /* FOOTER */
     footer { background: var(--ink); color: rgba(255,255,255,0.6); padding: 48px 24px 24px; margin-top: 60px; }
     .footer-inner { max-width: 1200px; margin: 0 auto; }
     .footer-brand { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 900; color: #fff; margin-bottom: 6px; }
@@ -121,14 +143,14 @@
 <body>
 
   <div class="ticker-bar"><div class="ticker-inner">
-    <span>Curragh Wildlife Sanctuary welcomes Solomon — oldest chimp in Queensland care</span>
-    <span>Solomon transferred from Johannesburg after sanctuary closure</span>
-    <span>Chimp found holding Farmer's Almanac forty minutes after arrival</span>
-    <span>Curragh open to public seven days — general admission $28 adults, $14 children</span>
-    <span>Curragh Wildlife Sanctuary welcomes Solomon — oldest chimp in Queensland care</span>
-    <span>Solomon transferred from Johannesburg after sanctuary closure</span>
-    <span>Chimp found holding Farmer's Almanac forty minutes after arrival</span>
-    <span>Curragh open to public seven days — general admission $28 adults, $14 children</span>
+    <span>Fernvale Wildlife Park's Pippy claims WW2 steel helmet as his own — keepers cannot retrieve it</span>
+    <span>Mk.II trench helmet believed to date from 1940–1944 — provenance under investigation</span>
+    <span>Macaque observed nesting inside helmet for third consecutive week</span>
+    <span>Fernvale Wildlife Park open daily 9am–5pm — general admission $22 adults, $11 children</span>
+    <span>Fernvale Wildlife Park's Pippy claims WW2 steel helmet as his own — keepers cannot retrieve it</span>
+    <span>Mk.II trench helmet believed to date from 1940–1944 — provenance under investigation</span>
+    <span>Macaque observed nesting inside helmet for third consecutive week</span>
+    <span>Fernvale Wildlife Park open daily 9am–5pm — general admission $22 adults, $11 children</span>
   </div></div>
 
   <div class="masthead">
@@ -138,8 +160,8 @@
         <div class="brand-sub">Australian Independent Journalism</div>
       </div>
       <div class="masthead-date">
-        <strong>Thursday, 19 March 2026</strong>
-        Sydney · Brisbane · Melbourne<br />Est. temperature 28°C · Fine &amp; sunny
+        <strong>Monday, 18 March 2026</strong>
+        Sydney · Brisbane · Melbourne<br />Est. temperature 26°C · Partly cloudy
       </div>
     </div>
   </div>
@@ -151,37 +173,37 @@
       <a href="#">World</a>
       <a href="#">Science &amp; Nature</a>
       <a href="#" class="active">Animals</a>
-      <a href="#">Conservation</a>
+      <a href="#">History</a>
       <a href="#">Opinion</a>
       <a href="#">Culture</a>
     </div>
   </div>
 
   <div class="hero-wrap">
-    <img src="ape.png" alt="Solomon, a 34-year-old male chimpanzee, holds a copy of the Farmer's Almanac at Curragh Wildlife Sanctuary, Queensland." />
+    <img src="ape.png" alt="Pippy, a juvenile long-tailed macaque, sits inside a battered WW2-era Mk.II steel helmet at Fernvale Wildlife Park, Queensland." />
   </div>
   <div class="hero-caption-bar">
     <p class="hero-caption-text">
-      <strong>Curragh Wildlife Sanctuary, Toowoomba, Queensland —</strong>
-      Solomon, photographed in his holding enclosure approximately forty minutes after arrival. Staff had provided enrichment items including a length of rope, a puzzle feeder, and a bundle of browse. He chose the almanac. <em>Photo: Curragh Wildlife Sanctuary / T. Mackie</em>
+      <strong>Fernvale Wildlife Park, Queensland —</strong>
+      Pippy, photographed inside the Mk.II steel helmet that now occupies a permanent position at the centre of his enclosure. He has been observed sleeping in it, carrying it, and — on at least two occasions — wearing it. <em>Photo: Fernvale Wildlife Park / J. Calloway</em>
     </p>
   </div>
 
   <div class="page-wrap">
     <article>
-      <div class="article-cat">Animals &amp; Wildlife <span>·&nbsp; Curragh Wildlife Sanctuary</span></div>
+      <div class="article-cat">Animals &amp; Wildlife <span>·&nbsp; Fernvale Wildlife Park</span></div>
 
-      <h1 class="article-headline">Meet Solomon: Curragh Wildlife Sanctuary Welcomes Its Oldest, Most Unimpressed Resident</h1>
+      <h1 class="article-headline">Pippy the Monkey Has Found a Piece of History. He Has No Intention of Giving It Back.</h1>
 
       <p class="article-deck">
-        A 34-year-old male chimpanzee named Solomon arrived at Curragh Wildlife Sanctuary outside Toowoomba on Tuesday morning after a 14,000-kilometre transfer from South Africa. He settled immediately, ignored the welcoming staff, and was found forty minutes later holding a copy of the Farmer's Almanac. Keepers say this is already a very good sign.
+        A young long-tailed macaque at Fernvale Wildlife Park has adopted an 80-year-old Mk.II steel helmet as his most prized possession. The helmet — a genuine relic of the Second World War, likely worn in the mud of the Pacific or North African campaigns — now belongs, as far as Pippy is concerned, entirely to him.
       </p>
 
       <div class="byline-row">
-        <div class="byline-avatar">KM</div>
+        <div class="byline-avatar">JC</div>
         <div class="byline-info">
-          <div class="byline-name">By <a href="#">Kate Mercer</a> &nbsp;·&nbsp; Queensland Correspondent</div>
-          <div class="byline-meta">Published Thursday, 19 March 2026, 07:15 AEST &nbsp;·&nbsp; Updated 11:40 AEST</div>
+          <div class="byline-name">By <a href="#">James Calloway</a> &nbsp;·&nbsp; Queensland Correspondent</div>
+          <div class="byline-meta">Published Monday, 18 March 2026, 08:20 AEST &nbsp;·&nbsp; Updated 13:05 AEST</div>
         </div>
         <div class="byline-share">
           <button class="share-btn share-x">𝕏 Share</button>
@@ -191,90 +213,84 @@
 
       <div class="article-body">
 
-        <p>He arrived at 6:47 on a Tuesday morning, in a climate-controlled transport crate that had been in the air for just under sixteen hours. The Curragh Wildlife Sanctuary team — seven keepers, two vets, and the sanctuary's director, Dr. Fiona Okafor — were waiting on the tarmac at Wellcamp Airport outside Toowoomba. They had prepared for every contingency: stress vocalisation, refusal to exit the crate, territorial aggression, transfer shock. What they got was a chimpanzee who walked out, looked at the assembled humans for approximately four seconds, and sat down in the shade of the transport vehicle as though he had been coming here his whole life and found the fuss unnecessary.</p>
+        <p>It arrived in a donation box three weeks ago — wedged between a bundle of hessian rope, a cracked rubber ball, and a wind-up musical toy that nobody at Fernvale Wildlife Park could identify. A keeper named <strong>Jesse Oakes</strong> spotted it immediately: a dull, olive-green steel helmet, deeply dented along one side, with a rusted chinstrap buckle and a faded circular stamp on the inside rim that read, in part, <em>Mk.II — 1943</em>. He set it aside to look at later. By the time he came back, Pippy had it.</p>
 
-        <p>"He just looked at us," says head keeper <strong>Tom Mackie</strong>, who has worked with great apes for nineteen years and has the restraint to find this funny. "Not aggressively. Not anxiously. Just — looked at us. Like we were mildly interesting. Then he sat down."</p>
+        <p>"I turned around and he'd already pulled it through the mesh," says Oakes, who has worked with primates at Fernvale for six years. "I mean — pulled it through properly. Worked it side-on through a gap that should have been too narrow. He's clever." He pauses. "Annoyingly clever."</p>
 
-        <p>The chimpanzee's name is <strong>Solomon</strong>. He is thirty-four years old, which places him firmly in the senior bracket for a captive common chimpanzee (<em>Pan troglodytes</em>), and he carries his age with what Mackie describes as "a kind of dignity that makes you want to stand up a bit straighter." He is large, dark-faced, and powerfully built across the shoulders, with amber eyes that his keepers have already noted tend to fix on a person for slightly longer than is entirely comfortable. He has a small tuft of lighter hair on his chin that makes him look, in certain lights, as though he has made a considered choice about facial hair.</p>
-
-        <div class="pull-quote">
-          <p>"He just looked at us. Not aggressively. Not anxiously. Just — like we were mildly interesting. Then he sat down."</p>
-          <cite>— Tom Mackie, Head Keeper, Curragh Wildlife Sanctuary</cite>
-        </div>
-
-        <p>Solomon was transferred to Curragh following the closure of the <strong>Nguni Primate Sanctuary</strong> in Johannesburg, where he had lived for the past eleven years. Before that, he spent twelve years at a research facility in the Netherlands — a period the sanctuary describes only as "completed before current ethical frameworks" and declines to discuss in detail. Before that, very little is known. His paperwork lists his country of origin as the Democratic Republic of Congo and his estimated birth year as 1992. Nguni staff describe him as having arrived at their facility already fully adult, already calm, and already opinionated.</p>
-
-        <p>"He's always known his own mind," says <strong>Dr. Amara Dlamini</strong>, the veterinarian who oversaw Solomon's care at Nguni for the past six years and who travelled with him to Australia as part of the transfer protocol. "He's not difficult. He's not aggressive. He just has very clear preferences and he will let you know what they are. Quietly. Persistently. Until you stop being obtuse about it."</p>
-
-        <p>The preferences, it emerged within the first hour at Curragh, include: browse material arranged on the upper level of his holding enclosure rather than the lower; water served in a metal vessel rather than plastic; and, apparently, printed matter. The Farmer's Almanac — a 2024 edition belonging to one of the sanctuary's volunteers — had been left on a bench near the enclosure wall during the arrival preparation. By the time Mackie returned from the airport vehicle, Solomon had retrieved it through the mesh and was holding it against the wire with both hands, apparently examining the cover.</p>
-
-        <div style="margin: 32px 0; padding: 20px 24px; background: #f5f0e8; border-left: 4px solid #1a3a5c;">
-          <p style="font-size: 13px; color: #555; font-style: italic; line-height: 1.65; margin: 0;">
-            <strong style="font-style: normal; color: #1a1a1a;">Common chimpanzees</strong> (<em>Pan troglodytes</em>) are listed as <strong>Endangered</strong> on the IUCN Red List, with wild population estimates ranging from 170,000 to 300,000 individuals across equatorial Africa. They are the closest living relatives of humans, sharing approximately 98.7% of DNA. In captivity, they can live to 50–60 years. Solomon, at 34, is considered middle-aged by modern sanctuary standards.
-          </p>
-        </div>
-
-        <p>"We've had chimps interact with enrichment objects their whole lives," says Dr. Okafor, who founded Curragh in 2009 and has personally overseen the arrival of forty-one primates over that time. "Tyres, mirrors, boxes, rope. Never had one go straight for a book."</p>
-
-        <p>She pauses. "He held it for about twenty minutes. He seemed to be going through it page by page. I'm not going to say he was reading it. I'm also not going to say he wasn't."</p>
-
-        <p>The almanac has since been placed back inside the enclosure as a permanent enrichment item. Solomon has been observed returning to it on three separate occasions since arrival.</p>
+        <p>Pippy is a juvenile <em>Macaca fascicularis</em> — a long-tailed macaque, sometimes called a crab-eating macaque — approximately three years old, with quick amber eyes, unusually large ears for his size, and the particular kind of mischievous energy that makes experienced primate keepers simultaneously charmed and exhausted. He arrived at Fernvale fourteen months ago from a wildlife rehabilitation centre in North Queensland, where he had been brought after being found alone at the edge of a sugarcane property. He settled into the park quickly. Too quickly, some keepers say.</p>
 
         <div class="pull-quote">
-          <p>"I'm not going to say he was reading it. I'm also not going to say he wasn't."</p>
-          <cite>— Dr. Fiona Okafor, Director, Curragh Wildlife Sanctuary</cite>
+          <p>"He had it inside the enclosure before I even registered what it was. He just knew he wanted it."</p>
+          <cite>— Jesse Oakes, Keeper, Fernvale Wildlife Park</cite>
         </div>
 
-        <p>Curragh Wildlife Sanctuary, situated on 210 acres of Darling Downs scrubland forty minutes west of Toowoomba, is currently home to sixty-three primates across seven species, including three other chimpanzees — <strong>Marnie</strong> (female, 22), <strong>Dex</strong> (male, 18), and <strong>Clue</strong> (female, 27) — who form the sanctuary's established chimpanzee social group. Solomon will not be introduced to the group immediately; the sanctuary follows a phased integration protocol that typically spans four to six months for adult males, with mesh introductions beginning after an initial quarantine and health assessment period of thirty days.</p>
+        <p>"He's never met a thing he didn't want to investigate," says <strong>Dr. Renee Harlow</strong>, the park's head veterinarian, who carried out Pippy's intake assessment and has been, in her words, "keeping a cautious eye on him ever since." "Most enrichment objects you give a young macaque, they'll look at it, they'll poke it, they'll get bored in twenty minutes. Pippy doesn't get bored. He finds new ways to interact with things. That's just how he's wired."</p>
 
-        <p>"We don't rush it," says Mackie. "Particularly with an older male. They've got history. They've got habits. You introduce them correctly or you don't introduce them at all."</p>
+        <p>The helmet, it is now clear, is not something Pippy is planning to get bored of. In the three weeks since he acquired it, he has used it as a seat, a shelter, a percussion instrument, a rolling toy, and — on at least two occasions observed by keepers — a hat. He drags it from one end of his enclosure to the other with a deliberateness that borders on ceremony. When it rains, he sits inside it.</p>
 
-        <p>His first assessment of how the integration might go is cautiously positive. "The others know he's here," he says. "You can tell. Marnie's been sitting near the mesh side of her enclosure since Tuesday. She's watching. I think she's curious." He considers this. "Solomon, on the other hand, has not shown any particular interest in them yet. He's been reading the almanac."</p>
+        <div class="history-box">
+          <div class="history-box-title">⚔️ &nbsp;The Mk.II Steel Helmet — A Brief History</div>
+          <p>The <strong>Mk.II steel helmet</strong> — formally the "Helmet, Steel, Mk.II" — was the standard-issue combat helmet of British and Commonwealth forces from the early 1930s through to the mid-1940s. Its distinctive shallow, wide-brimmed profile was a direct development of the Brodie helmet first introduced in 1915, itself designed to protect soldiers in the trenches of the Western Front from artillery shrapnel falling from above.</p>
+          <p>In the brutal, waterlogged trenches of the First World War, the majority of casualties came not from direct gunfire but from shell fragments raining down into the trenches from above. The Brodie — and its successor, the Mk.II — was shaped precisely to deflect this threat: wide-brimmed, low-crowned, pressed from a single piece of Hadfield manganese steel. It was not designed to stop a direct rifle round. It was designed to keep you alive long enough to matter.</p>
+          <p>By the Second World War, the Mk.II was ubiquitous across British, Australian, New Zealand and Canadian forces — worn from the beaches of Gallipoli's legacy campaigns to the deserts of North Africa, the jungles of Burma and New Guinea, and the landings at Normandy. Millions were produced between 1939 and 1945. By 1944 a revised Mk.III had largely replaced it on the front line, but the Mk.II soldiered on in rear-echelon and garrison roles well into the late 1940s.</p>
+          <p>Surplus Mk.II helmets entered civilian life through disposal sales, returned-servicemen's collections, and farm sheds across Australia — which is almost certainly how one ended up, eight decades later, in a donation box at a wildlife park in Queensland.</p>
+        </div>
+
+        <p>The helmet's provenance is currently being investigated — gently, given the circumstances — by <strong>Ian Truscott</strong>, a military historian and volunteer at the Fernvale Heritage Society who happened to visit the park last week with his grandchildren and spotted the helmet from the viewing walkway. "The stamp's consistent with British or Australian Commonwealth manufacture, 1943," he says. "The denting on the left side — I'd want to be careful about reading too much into that, but it's consistent with impact damage. It's been somewhere. It's done something." He watches Pippy roll it across the enclosure floor. "And now it's doing something else entirely."</p>
+
+        <p>Truscott has offered to photograph and document the helmet for the Heritage Society's records, a process that would require temporarily removing it from the enclosure. He has been advised by keepers that this would be "an interesting challenge."</p>
+
+        <div class="pull-quote">
+          <p>"The stamp's consistent with 1943 manufacture. It's been somewhere. It's done something. And now it's doing something else entirely."</p>
+          <cite>— Ian Truscott, Fernvale Heritage Society</cite>
+        </div>
+
+        <p>"We did try once," says Oakes, with the measured tone of someone who has made peace with a difficult memory. "Early on, before we understood what it meant to him. We tried to swap it out for a replica — a reproduction helmet we sourced from a military surplus shop. He looked at it for about four seconds." Oakes shakes his head. "He knew. I don't know how, but he knew. He pushed it aside and went back to looking for the original."</p>
+
+        <p>Dr. Harlow is unsurprised. "Macaques are extraordinarily perceptive to material and texture. The weight's different, the patina's different, the smell is different — eighty years of history is chemically distinct from a reproduction. He lives in his senses. Of course he knew."</p>
+
+        <p>The park has now incorporated the Mk.II helmet into Pippy's official enrichment programme. It is logged, photographed, and monitored for structural integrity — a quarterly check carried out by Oakes using a long-handled mirror while Pippy watches from the far side of the enclosure with the expression of someone tolerating an inspection of their home they never agreed to.</p>
 
         <div class="fact-box">
-          <div class="fact-box-title">📋 &nbsp;Solomon — Key Facts</div>
+          <div class="fact-box-title">📋 &nbsp;Pippy — Key Facts</div>
           <ul>
-            <li>Species: Common chimpanzee (<em>Pan troglodytes</em>)</li>
-            <li>Age: 34 years (est. born 1992, DRC)</li>
-            <li>Weight: 56 kg — upper range for adult male</li>
-            <li>Previous home: Nguni Primate Sanctuary, Johannesburg, 2015–2026</li>
-            <li>Before that: Research facility, Netherlands, 2003–2015</li>
-            <li>Status: IUCN Endangered; CITES Appendix I protected species</li>
-            <li>Integration timeline: Quarantine 30 days, mesh introductions from late April</li>
-            <li>Known preferences: Browse on upper level, metal water vessel, printed matter</li>
+            <li>Species: Long-tailed macaque (<em>Macaca fascicularis</em>)</li>
+            <li>Age: Approximately 3 years</li>
+            <li>Arrived at Fernvale: January 2025, from North Queensland rehabilitation</li>
+            <li>Known as: The most persistent animal in the park's history</li>
+            <li>The helmet: British/Commonwealth Mk.II steel, stamped 1943 — approx. 80 years old</li>
+            <li>Helmet status: Permanent enrichment object, quarterly structural review</li>
+            <li>Viewing: Daily, Fernvale Wildlife Park primate walk — 9am to 4pm</li>
           </ul>
         </div>
 
-        <p>Solomon's arrival marks a significant development for Curragh, which has been working for three years to establish a sustainable chimpanzee social group suitable for accreditation under the <strong>Zoo and Aquarium Association Australasia (ZAA)</strong> breeding and conservation programme. An older, non-breeding male like Solomon — too old to be part of a breeding pair, but experienced enough to serve as a social anchor for younger individuals — is considered a particularly valuable placement.</p>
+        <p>Visitors, meanwhile, have noticed. Since a photo of Pippy sitting inside the helmet was posted to the park's social media accounts eleven days ago — he is perched inside it, holding a blade of grass, staring at the camera with an expression of complete serenity — it has been shared over forty thousand times. The comments divide roughly into two camps: those who find it unbearably endearing, and those who find it philosophically interesting. "There's something about it," one commenter wrote, and was liked fourteen thousand times without needing to finish the thought.</p>
 
-        <p>"Young male chimps need older males to socialise them properly," explains Dr. Okafor. "Dex is eighteen. He's smart, he's capable, but he's never had a senior male to model himself on. Solomon doesn't have to do anything dramatic. He just has to be present. He just has to be himself." She smiles. "From what I've seen so far, I don't think being himself is going to be a problem for him."</p>
+        <p>"I think what people are responding to," says Dr. Harlow, "is the collision of things. This object that carries so much — history, loss, a whole world of human experience — and this small animal who just sees something round and interesting and warm. He's not thinking about the Somme. He's not thinking about Tobruk. He just knows it fits him perfectly." She looks out at the enclosure. Pippy is, at this particular moment, wearing the helmet at a slight angle and eating a piece of mango. "And honestly," she says, "maybe that's alright."</p>
 
-        <p>Solomon is currently on public display in his holding enclosure — viewable from the sanctuary's primate walkway — while quarantine assessments are completed. He can be seen daily between 9am and 4pm. He is, keepers report, already aware of the viewing public, and tends to acknowledge them with a measured glance before returning to whatever he was doing.</p>
-
-        <p>The almanac is in there with him. Staff have ordered a second copy, in case.</p>
+        <p>Fernvale Wildlife Park is open seven days a week. Pippy can be found on the primate walk, enclosure seven, between the ring-tailed possums and the red-necked wallabies. Bring patience. He will not perform on demand. But if you wait long enough, he will almost certainly put the helmet on.</p>
 
       </div>
 
       <div class="tags">
-        <a href="#">Solomon</a>
-        <a href="#">Chimpanzee</a>
-        <a href="#">Curragh Wildlife Sanctuary</a>
+        <a href="#">Pippy</a>
+        <a href="#">Macaque</a>
+        <a href="#">Fernvale Wildlife Park</a>
         <a href="#">Queensland</a>
-        <a href="#">Primates</a>
-        <a href="#">Conservation</a>
-        <a href="#">Australia</a>
-        <a href="#">ZAA</a>
+        <a href="#">WW2</a>
+        <a href="#">Mk.II Helmet</a>
+        <a href="#">Military History</a>
+        <a href="#">Wildlife</a>
       </div>
     </article>
 
     <aside class="sidebar">
 
       <div class="sidebar-widget">
-        <div class="widget-head"><h3>About Curragh Sanctuary</h3></div>
+        <div class="widget-head"><h3>About Fernvale Wildlife Park</h3></div>
         <div class="about-widget">
-          <p><strong>Curragh Wildlife Sanctuary</strong> is a non-profit wildlife facility located on 210 acres near Toowoomba, Queensland. Founded in 2009 by Dr. Fiona Okafor, it is home to 63 primates across seven species.</p>
-          <p>Curragh is accredited by the Zoo and Aquarium Association Australasia (ZAA) and contributes to regional conservation breeding programmes for five endangered species.</p>
-          <p>General admission: $28 adults / $14 children. Open 7 days, 9am–5pm.</p>
+          <p><strong>Fernvale Wildlife Park</strong> is a Queensland Department of Environment-accredited wildlife facility located in the Brisbane Valley. Home to over 200 native and exotic animals, the park operates a dedicated primate rehabilitation unit in partnership with the University of Queensland.</p>
+          <p>General admission: $22 adults / $11 children. Open 7 days, 9am–5pm. Last entry 4:00pm.</p>
         </div>
       </div>
 
@@ -282,27 +298,27 @@
         <div class="widget-head"><h3>Related Stories</h3></div>
         <div class="widget-body">
           <a href="#" class="related-item" style="display:flex;text-decoration:none;">
-            <div class="related-thumb">🦍</div>
+            <div class="related-thumb">🪖</div>
+            <div class="related-info">
+              <div class="related-cat">History</div>
+              <div class="related-title">The Mk.II Helmet: How a Steel Bowl Saved a Generation</div>
+              <div class="related-date">12 March 2026</div>
+            </div>
+          </a>
+          <a href="#" class="related-item" style="display:flex;text-decoration:none;">
+            <div class="related-thumb">🐒</div>
             <div class="related-info">
               <div class="related-cat">Animals</div>
-              <div class="related-title">Inside the ZAA's Push to Rehome Africa's Displaced Great Apes</div>
-              <div class="related-date">14 March 2026</div>
+              <div class="related-title">Queensland's Macaque Population: Recovery, Risk, and the Road Ahead</div>
+              <div class="related-date">5 March 2026</div>
             </div>
           </a>
           <a href="#" class="related-item" style="display:flex;text-decoration:none;">
             <div class="related-thumb">🌿</div>
             <div class="related-info">
-              <div class="related-cat">Conservation</div>
-              <div class="related-title">Toowoomba Sanctuary Expansion Approved: 80 New Acres for Primate Habitat</div>
-              <div class="related-date">2 March 2026</div>
-            </div>
-          </a>
-          <a href="#" class="related-item" style="display:flex;text-decoration:none;">
-            <div class="related-thumb">🔬</div>
-            <div class="related-info">
-              <div class="related-cat">Science</div>
-              <div class="related-title">What We Talk About When We Talk About Chimp Intelligence</div>
-              <div class="related-date">22 February 2026</div>
+              <div class="related-cat">Wildlife</div>
+              <div class="related-title">Inside the Rehabilitation Centres Giving Displaced Primates a Second Chance</div>
+              <div class="related-date">25 February 2026</div>
             </div>
           </a>
         </div>
@@ -326,7 +342,7 @@
       <div class="footer-tagline">Australian Independent Journalism — Sydney, Brisbane, Melbourne</div>
       <div class="footer-links">
         <a href="index.html">Home</a><a href="#">Australia</a><a href="#">Animals</a>
-        <a href="#">Conservation</a><a href="#">Science</a><a href="#">Opinion</a>
+        <a href="#">History</a><a href="#">Science</a><a href="#">Opinion</a>
         <a href="#">About Us</a><a href="#">Contact</a><a href="#">Privacy Policy</a>
       </div>
       <div class="footer-bottom">
